@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/hikingtrails', getHikingTrails)
-app.put("/hikingtrails/:_id", addReview);
+app.post("/hikingtrails/:_id", addReview);
 
 app.get('/test', (req, res) => res.send({ success: true, message: 'API is working!' }))
 
