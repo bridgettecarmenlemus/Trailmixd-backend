@@ -7,7 +7,7 @@ import { addReview } from "./src/Reviews.js";
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:3000"
+    origin: ["http://localhost:3000", "https://trailmix-bl-fe.web.app"]
   })
 );
 app.use(express.json());
