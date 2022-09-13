@@ -18,5 +18,5 @@ export const addReview = (req, res) => {
 
     collection.updateOne({ _id: newId }, { $push: {"Reviews":CommentObject} });
   });
-  res.send({ message: "it worked" });
+  res.status(201);
 };

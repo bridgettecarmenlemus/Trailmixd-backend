@@ -14,6 +14,7 @@ export const getHikingTrails = (req, res) => {
       if (result) res.json(result);
       client.close();
     });
+  
   });
 };
 
